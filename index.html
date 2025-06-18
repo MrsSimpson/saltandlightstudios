@@ -15,10 +15,16 @@
 </head>
 
 <body class="bg-stone-50 text-stone-800">
+    <!-- Nav toggle button for small screens -->
+    <button id="nav-toggle" class="md:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded shadow">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
     <div class="flex flex-col md:flex-row min-h-screen">
         <!-- Sidebar Navigation - Now Sticky -->
         <div
-            class="sidebar bg-stone-900 text-white md:w-64 w-full md:fixed md:h-screen p-6 flex flex-col justify-between">
+            class="sidebar bg-stone-900 text-white md:w-64 w-full md:fixed md:h-screen p-6 flex flex-col justify-between md:block hidden">
             <div>
                 <!-- Logo -->
                 <div class="logo-section">
@@ -420,7 +426,7 @@
                                         class="px-2 py-1 bg-stone-100 text-stone-600 text-xs rounded-full">Techniques</span>
                                 </div>
                                 <a class="text-stone-900 font-medium hover:underline inline-flex items-center"
-                                    href="/Blogs/building-my-photography-website.html">
+                                    href="./Blogs/building-my-photography-website.html">
                                     Read Blog
                                     <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
